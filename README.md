@@ -3,10 +3,6 @@
 DISCLAIMER ! This template is for educational only
 ### Installation
 
-#### -clone this repo and then open this project into your code editor (vs code recommended) 
-
-```
-git clone https://github.com/oryfikry/laravel-8-boilerplate.git
 ```
 #### -rename .env.example to .env
 #### -run composer
