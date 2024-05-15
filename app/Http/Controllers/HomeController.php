@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
+
+use App\Models\{User, Saldo, Transaction};
 
 class HomeController extends Controller
 {
@@ -24,10 +24,12 @@ class HomeController extends Controller
     public function index()
     {
         $data = array(
-            'count_user' => DB::table('users')->count(),
-            'menu'      => 'menu.v_menu_admin',
-            'content' => 'content.view_dashboard'
+            'count_user' => User::latest()->count(),
+            'count_trans' => Transaction::latest()->count(),    
+            'saldo'      => number_format(Saldo::where('users_id', auth()->user()->id)->first()->saldo),
+            'menu'       => 'menu.v_menu_admin',
+            'content'    => 'content.view_dashboard'
         );
-        return view('layouts.v_template',$data);
+        return view('layouts.v_template', $data);
     }
 }
