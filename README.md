@@ -9,7 +9,7 @@ composer install
 ```
 php artisan key:generate
 ```
-#### -set your database in file .env and in your phpmysql or etc
+#### -set your database in file .env and in your pgsql or etc
 
 #### -run migrate
 ```
