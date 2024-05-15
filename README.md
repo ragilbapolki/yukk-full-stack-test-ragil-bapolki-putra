@@ -2,8 +2,6 @@
 
 DISCLAIMER ! This template is for educational only
 ### Installation
-
-```
 #### -rename .env.example to .env
 #### -run composer
 ```
