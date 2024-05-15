@@ -18,5 +18,3 @@ php artisan migrate
 #### -run 
 ```
 php artisan serve
-
-
