@@ -19,15 +19,7 @@ php artisan key:generate
 ```
 php artisan migrate
 ```
-
 #### -run 
-```
 php artisan serve
-```
-#### Optional
--for first register type manually "YOUR_URL/register"
 
-you can setting login page default with:
-go to vendor/laravel/ui/auth-backend/authenticatesuser
-on showloginform() replace auth.login with v_login 
 
